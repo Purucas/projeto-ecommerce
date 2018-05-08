@@ -131,20 +131,29 @@
 
 
     <section >
-      <div class="row text-align">
-    <div class="col-md-3"></div>
-        <div class="col-md-2 text-align">
-        <img src="imagens/bf1.jpg">
+      <div class="row text-align"  >
+      <div class="col-md-2 "></div>
+  <div class="card bg-dark">
+  <div class="card-body">
+        <div class="col-md-3 text-align">
+        <img  src="imagens/bf1.jpg">
         </div>
-
-        <figure class="col-md-2">
-        <img src="imagens/FIFA.jpg">
+  </div>
+  </div> 
+  <div class="card bg-dark">
+  <div class="card-body">    
+        <figure class="col-md-3 "  >
+        <img class="border border-dark width" src="imagens/FIFA.jpg">
         </figure>
-
-        <figure class="col-md-2">
-        <img src="imagens/GOD.jpg">
+  </div>
+  </div>       
+  <div class="card bg-dark">
+  <div class="card-body">
+        <figure class="col-md-3">
+        <img class="border border-dark" src="imagens/GOD.jpg">
         </figure>
-
+  </div>
+  </div>      
       </div>
     </section>
     <footer class="page-footer blue center-on-small-only" style=" width: 100%" >
@@ -152,11 +161,9 @@
         <div class="container-fluid" style="text-align: center;">
           <h1>A MELHOR LOJA DO RIO</h1>
         </div>
-    </div>
-      
     </footer>
+    </div> 
   </div>
-</div>
 
 
 
