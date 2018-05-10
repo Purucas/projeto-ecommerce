@@ -30,8 +30,8 @@
         </div>
 
         <div class="col-md-4" style="margin-top: 60px; text-align: center">
-          <a style="color: yellow" href="#">Cadastre-se</a></br>
-          <a style="color: yellow" href="#">Login</a>
+         <h3> <a style="color: Black" href="#">Cadastre-se</a></br> </h3>
+          <h3> <a style="color: Black" href="#">Login</a></h3>
         </div>
 
       </div>
@@ -80,8 +80,8 @@
           </nav> 
       </div>
 
-
-  		<div class="row">
+<body bgcolor="#9C9C9C ">
+  		<div class="row justify-content-center text-center mt-2">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -93,28 +93,28 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="imagens/xbox.jpg" alt="First slide">
-            <h3>Promoção</h3>
-            <p>Xbox One </p>
+            <h1>Promoção</h1>
+            <h3><p>Xbox One </p></h3>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="imagens/tvs1.jpg" alt="Second slide">
-            <h3>Promoção</h3>
-            <p>Tv's de Várias marcas e Tamanhos </p>
+            <h1>Promoção</h1>
+            <h3><p>Tv's de Várias Marcas e Tamanhos </p></h3>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="imagens/figure1.jpg" alt="Third slide">
-            <h3>Promoção</h3>
-            <p>Action Figures </p>
+            <h1>Promoção</h1>
+            <h3><p>Funko Pop </p></h3>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="imagens/figure2.jpg" alt="Third slide">
-            <h3>Promoção</h3>
-            <p>Action Figures </p>
+            <h1>Promoção</h1>
+           <h3> <p>Funko Pop </p></h3>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="imagens/figure3.jpg" alt="Third slide">
-            <h3>Promoção</h3>
-            <p>Action Figures  </p>
+            <h1>Promoção</h1>
+            <h3><p> Action Figures </p></h3>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -130,9 +130,8 @@
 
 
 
-    <section >
-      <div class="row text-align"  >
-      <div class="col-md-2 "></div>
+    <div class="row justify-content-center text-center mb-2" >
+      <div class="row text-align">
   <div class="card bg-dark">
   <div class="card-body">
         <div class="col-md-3 text-align">
@@ -155,11 +154,11 @@
   </div>
   </div>      
       </div>
-    </section>
+    </div>
     <footer class="page-footer blue center-on-small-only" style=" width: 100%" >
       <div class="footer-copyright" style="background-color: #32CD32">
         <div class="container-fluid" style="text-align: center;">
-          <h1>A MELHOR LOJA DO RIO</h1>
+          <h2>A MELHOR LOJA DO RIO</h2>
         </div>
     </footer>
     </div> 
@@ -175,3 +174,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+
