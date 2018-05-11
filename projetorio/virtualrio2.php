@@ -30,8 +30,8 @@
         </div>
 
         <div class="col-md-4" style="margin-top: 60px; text-align: center">
-         <h3> <a style="color: Black" href="#">Cadastre-se</a></br> </h3>
-          <h3> <a style="color: Black" href="#">Login</a></h3>
+         <h3> <a style="color: Black" href="cadastro.php">Cadastre-se</a></br> </h3>
+          <h3> <a style="color: Black" href="Login.php">Login</a></h3>
         </div>
 
       </div>
@@ -48,31 +48,31 @@
               <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item active">
-                      <a style="color: #fff" class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                      <a style="color: #fff" class="nav-link" href="virtualrio2.php">HOME<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                      <a style="color: #fff" class="nav-link" href="#">LIVROS <span class="sr-only">(current)</span></a>
+                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=livros">LIVROS <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                      <a style="color: #fff" class="nav-link" href="#">CELULARES E TELEFONES <span class="sr-only">(current)</span></a>
+                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=celulares">CELULARES E TELEFONES <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                      <a style="color: #fff" class="nav-link" href="#">CONSOLES E GAMES <span class="sr-only">(current)</span></a>
+                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=consoleGames">CONSOLES E GAMES <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                      <a style="color: #fff" class="nav-link" href="#">ELETRODOMÉSTICOS <span class="sr-only">(current)</span></a>
+                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=eletrodomestico">ELETRODOMÉSTICOS <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                      <a style="color: #fff" class="nav-link" href="#">INFORMÁTICA <span class="sr-only">(current)</span></a>
+                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=informatica">INFORMÁTICA <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                      <a style="color: #fff" class="nav-link" href="#">MÓVEIS E DECORAÇÕES <span class="sr-only">(current)</span></a>
+                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=moveis">MÓVEIS E DECORAÇÕES <span class="sr-only">(current)</span></a>
                 </li>
             
               </ul>
