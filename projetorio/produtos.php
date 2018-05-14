@@ -48,15 +48,16 @@
                 </li>
 
                 <li class="nav-item active">
-                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=celulares">CELULARES E TELEFONES <span class="sr-only">(current)</span></a>
+                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=celulares">CELULARES<span class="sr-only">(current)</span></a>
+                </li>
+
+
+                <li class="nav-item active">
+                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=games">CONSOLES E GAMES <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=consoleGames">CONSOLES E GAMES <span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item active">
-                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=eletrodomestico">ELETRODOMÉSTICOS <span class="sr-only">(current)</span></a>
+                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=eletrodomesticos">ELETRODOMÉSTICOS <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
@@ -66,7 +67,10 @@
                 <li class="nav-item active">
                       <a style="color: #fff" class="nav-link" href="produtos.php?categoria=moveis">MÓVEIS E DECORAÇÕES <span class="sr-only">(current)</span></a>
                 </li>
-            
+              <li class="nav-item active">
+                      <a style="color: #fff" class="nav-link" href="produtos.php?categoria=camisas">CAMISAS <span class="sr-only">(current)</span></a>
+                </li>
+
               </ul>
                 </div>
           </nav> 
@@ -80,11 +84,29 @@
 
 
   <?php
-
+  include('conexao.php');
   $cat = $_GET['categoria'];
-  echo $cat;
+  
 
-  ?>
+
+$stmt = $pdo->prepare('SELECT * FROM produtos WHERE categoriaproduto = ? ' );
+$stmt->bindParam(1, $cat,PDO::PARAM_STR);
+
+
+$stmt->execute();
+$alvos = $stmt->fetchAll();
+
+foreach ($alvos as $produto) {
+?>
+<div class="container col-md-2">
+<h1> <?php echo $produto['nomeproduto']; ?></h1>
+<h2>R$ <?php echo $produto['precoproduto']; ?></h2>
+<img src= "imagens/<?php echo $produto['fotodoproduto']; ?>.jpg">
+</div> 
+ <?php
+}
+
+?>
 
 
   </div>
