@@ -31,7 +31,7 @@
 
         <div class="col-md-4" style="margin-top: 60px; text-align: center">
          <h3> <a style="color: Black" href="cadastro.php">Cadastre-se</a></br> </h3>
-          <h3> <a style="color: Black" href="formulario.php">Login</a></h3>
+          <h3> <a style="color: Black" href="login.php">Login</a></h3>
         </div>
 
       </div>
