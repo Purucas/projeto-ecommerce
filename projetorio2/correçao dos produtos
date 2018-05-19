@@ -1,0 +1,39 @@
+<div class="row my-5 justify-content-center ">
+			 <?php
+				include 'conect.php';
+
+
+				$categoria = $_GET['categoria'];
+
+				$stmt = $pdo->prepare('SELECT * FROM produtos WHERE tipo= ? ');
+				$stmt->bindValue(1,$categoria, PDO::PARAM_STR);
+				$stmt->execute();
+				$alvos = $stmt->fetchAll();
+ 
+				foreach ($alvos as $item) {
+				
+				
+			?>	
+
+
+				<div class="card col-md-3 mx-3" style="margin-top: 15px">
+				  <img class="card-img-top" src="imagem/<?php echo $item['prod_img']; ?>" width = "50%" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title"><?php echo $item['nome']; ?></h5>
+				    <p class="card-text"><?php echo $item['descricao'] ?></p>
+				    <p class="card-text"><?php echo "R$ ".$item['preco'] ?></p>
+				    <form action="carrinho.php" method="post">
+						<button type='submit' class="btn btn-primary">COMPRAR</button>
+						<input type="hidden" name="nome-produto" value="<?php echo $alvos[0]['nome']; ?>">
+						<input type="hidden" name="descricao-produto" value="<?php echo $alvos[0]['descricao']; ?>">
+						<input type="hidden" name="preco-produto" value="<?php echo $alvos[0]['preco']; ?>">
+						<input type="hidden" name="imagem-produto" value="<?php echo $alvos[0]['prod_img']; ?>">
+					</form>
+
+				  </div>
+				</div>
+				<?php 
+					}
+				 
+			 ?>
+			</div>
