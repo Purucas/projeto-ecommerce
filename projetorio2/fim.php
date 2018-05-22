@@ -1,23 +1,22 @@
 <?php  
 session_start();
-session_destroy();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title>Virtual RIO</title>
-		<meta charset="utf-8" />
+  <head>
+    <title>Virtual RIO</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	</head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  </head>
   <body>
 
     <div class="container-fluid">
-  		<header style="background-color: #32CD32 " >
-  			<h1 class ="titulo">Virtual RIO</h1>
-  		</header>
+      <header style="background-color: #32CD32 " >
+        <h1 class ="titulo">Virtual RIO</h1>
+      </header>
 
-		
+    
 
       <div class="row" style="background-color: #32CD32">
 
@@ -38,11 +37,7 @@ session_destroy();
             echo $_SESSION ['nome'];
             echo '</h4>';
           ?>
-          <form method="post" action="fim.php">
-              <input type="hidden" name="sair" value="1">
-                     <button>Sair</button> 
-          </form>
-          
+         
 
           <?php
         }
@@ -100,7 +95,7 @@ session_destroy();
       </div>
 
 <body bgcolor="#9C9C9C ">
-  		<div class="row justify-content-center text-center mt-2">
+      <div class="row justify-content-center text-center mt-2">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -193,7 +188,3 @@ session_destroy();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
-
-

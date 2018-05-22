@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+session_start();
+echo $_SESSION ['nome'];
+
+
+
+?>
 <html lang="pt-br">
 	<head>
 		<title>Virtual RIO</title>
@@ -100,9 +107,9 @@
 				</div>
  
 				<a href="#" class="ls-login-forgot">Esqueci minha senha</a>
- 
-				<input type="submit" value="Entrar" class="btn btn-primary btn-lg btn-block col-md-2">
-
+      
+				<input  type="submit" value="Entrar"  class="btn btn-primary btn-lg btn-block col-md-2">
+        
 				<p class="txt-center ls-login-signup">Não possui um usuário na Virtual RIO?
 					<a href="cadastro.php">Cadastre-se agora</a>
 				</p>
