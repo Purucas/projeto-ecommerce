@@ -1,24 +1,22 @@
 
-
-
-
 <?php
 session_start();
 $usuario = $_SESSION['nome'];
 
+?>
 
 
 
+<?php
 include 'conexao.php';
 
 $nomeproduto = $_POST['nomeproduto'];
 $fotodoproduto = $_POST['fotodoproduto'];
 $precoproduto = $_POST['precoproduto'];
 
-
-
-
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -100,7 +98,7 @@ $precoproduto = $_POST['precoproduto'];
 <img src="imagens/<?php echo $fotodoproduto ?>.jpg "><br>
 <?php echo "$nomeproduto" ?><br/>
 <?php echo "$precoproduto" ?>
-<button > Confirmar Compra </button>
+<button class="btn btn-secondary btn-lg btn-block col-md-1"> Comprar </button>
 
 
 

@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <?php
 session_start();
-echo $_SESSION ['nome'];
-
-
 
 ?>
 <html lang="pt-br">
-	<head>
-		<title>Virtual RIO</title>
-		<meta charset="utf-8" />
+  <head>
+    <title>Virtual RIO</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	</head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  </head>
   <body>
 
 
 
     <div class="container-fluid">
-  		<header style="background-color: #32CD32 " >
-  			<h1 class ="titulo">Virtual RIO</h1>
-  		</header>
+      <header style="background-color: #32CD32 " >
+        <h1 class ="titulo">Virtual RIO</h1>
+      </header>
 
 
 
@@ -87,32 +84,32 @@ echo $_SESSION ['nome'];
               </ul>
                 </div>
           </nav> 
-      </div>	
-	<div class="box-parent-login">
-	<div class="well bg-white box-login">
-		<h1 class="ls-login-logo">Virtual RIO</h1>
+      </div>  
+  <div class="box-parent-login">
+  <div class="well bg-white box-login">
+    <h1 class="ls-login-logo">Virtual RIO</h1>
 <div id="register" class="animate form">
-		<form role="form" action="select_login.php" method="post">
-			<fieldset>
+    <form role="form" action="select_login.php" method="post">
+      <fieldset>
  
 
-				<div class="form-group ls-login-user">
-					<label for="userLogin">Nome</label>
-					<input class="form-control ls-login-bg-user input-lg" name="nome" id="userLogin" type="text" aria-label="nome" placeholder="Seu Nome ">
-				</div>
+        <div class="form-group ls-login-user">
+          <label for="userLogin">Nome</label>
+          <input class="form-control ls-login-bg-user input-lg" name="nome" id="userLogin" type="text" aria-label="nome" placeholder="Seu Nome ">
+        </div>
  
-				<div class="form-group ls-login-password">
-					<label for="userPassword">Senha</label>
-					<input class="form-control ls-login-bg-password input-lg" name="senha" type="password" aria-label="Senha" placeholder="Senha">
-				</div>
+        <div class="form-group ls-login-password">
+          <label for="userPassword">Senha</label>
+          <input class="form-control ls-login-bg-password input-lg" name="senha" type="password" aria-label="Senha" placeholder="Senha">
+        </div>
  
-				<a href="#" class="ls-login-forgot">Esqueci minha senha</a>
+        <a href="#" class="ls-login-forgot">Esqueci minha senha</a>
       
-				<input  type="submit" value="Entrar"  class="btn btn-primary btn-lg btn-block col-md-2">
+        <input  type="submit" value="Entrar"  class="btn btn-primary btn-lg btn-block col-md-2">
         
-				<p class="txt-center ls-login-signup">Não possui um usuário na Virtual RIO?
-					<a href="cadastro.php">Cadastre-se agora</a>
-				</p>
+        <p class="txt-center ls-login-signup">Não possui um usuário na Virtual RIO?
+          <a href="cadastro.php">Cadastre-se agora</a>
+        </p>
  
 
 
@@ -120,10 +117,10 @@ echo $_SESSION ['nome'];
 
 
 
-			</fieldset>
-		</form>
+      </fieldset>
+    </form>
 </div>    
-	</div>
+  </div>
 </div>
 
 
