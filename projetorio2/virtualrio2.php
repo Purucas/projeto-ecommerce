@@ -1,5 +1,6 @@
 <?php  
 session_start();
+include 'conexao.php';
 
 ?>
 <!DOCTYPE html>
@@ -28,8 +29,8 @@ session_start();
         </div>
 
         <div class="col-md-4" style="margin-top: 60px; width: 50%">
-            <form class="form-inline text-center" >
-              <input class="form-control" type="search" placeholder="O que você procura? " aria-label="Search" style="width: 100%">
+            <form class="form-inline text-center" action="busca.php"  method="get" >
+              <input class="form-control" type="search" name="busca" placeholder="O que você procura? " aria-label="Search" style="width: 100%">
             </form>
         </div>
         <?php 

@@ -29,6 +29,28 @@
               <input class="form-control" type="search" placeholder="O que você procura? " aria-label="Search" style="width: 100%">
             </form>
         </div>
+        <?php 
+          if (isset($_SESSION ['nome'])){
+            echo '<h4>';
+            echo $_SESSION ['nome'];
+            echo '</h4>';
+          ?>
+          <form method="post" action="fim.php">
+              <input type="hidden" name="sair" value="1">
+                     <button>Sair</button> 
+          </form>
+          
+
+          <?php
+        }
+          else{
+         ?>
+        <div class="col-md-4" style="margin-top: 60px; text-align: center">
+         <h3> <a style="color: Black" href="cadastro.php">Cadastre-se</a> </h3>
+          <h3> <a style="color: Black" href="login.php">Login</a></h3>
+        </div>
+        <?php } ?>
+      </div>
 <div class="row">
           
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-md-12">
