@@ -1,22 +1,24 @@
 
+
+
+
 <?php
 session_start();
 $usuario = $_SESSION['nome'];
 
-?>
 
 
 
-<?php
 include 'conexao.php';
 
 $nomeproduto = $_POST['nomeproduto'];
 $fotodoproduto = $_POST['fotodoproduto'];
 $precoproduto = $_POST['precoproduto'];
 
+
+
+
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -52,28 +54,6 @@ $precoproduto = $_POST['precoproduto'];
         
       </div>
 
-<?php 
-          if (isset($_SESSION ['nome'])){
-            echo '<h4>';
-            echo $_SESSION ['nome'];
-            echo '</h4>';
-          ?>
-          <form method="post" action="fim.php">
-              <input type="hidden" name="sair" value="1">
-                     <button>Sair</button> 
-          </form>
-          
-
-          <?php
-        }
-          else{
-         ?>
-        <div class="col-md-4" style="margin-top: 60px; text-align: center">
-         <h3> <a style="color: Black" href="cadastro.php">Cadastre-se</a> </h3>
-          <h3> <a style="color: Black" href="login.php">Login</a></h3>
-        </div>
-        <?php } ?>
-      </div>
       <div class="row">
           
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-md-12">
@@ -116,13 +96,17 @@ $precoproduto = $_POST['precoproduto'];
               </ul>
                 </div>
           </nav>
-         
-<img src="imagens/<?php echo $fotodoproduto ?>.jpg "><br>
-<?php echo "$nomeproduto" ?><br/>
-<?php echo "$precoproduto" ?>
-<button class="btn btn-secondary btn-lg btn-block col-md-1"> Comprar </button>
+
+       
+   <img src="imagens/<?php echo $fotodoproduto ?>.jpg "><br>
+   <?php echo "$nomeproduto" ?><br/>
+   <?php echo "$precoproduto" ?>
+<form method="post" action="finalizar.php">
 
 
+  <button type="submit">Confirmar Compra</button><br>
+
+</form>
 
       </div>
 
